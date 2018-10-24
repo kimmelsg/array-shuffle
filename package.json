@@ -21,6 +21,11 @@
   "keywords": [
     ""
   ],
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "printWidth": 100
+  },
   "dependencies": {},
   "devDependencies": {
     "ava": "^0.25.0",
@@ -33,5 +38,9 @@
       "lcov",
       "text"
     ]
+  },
+  "xo": {
+    "space": true,
+    "prettier": true
   }
 }
