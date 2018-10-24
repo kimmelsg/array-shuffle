@@ -1,4 +1,4 @@
-# array-shuffle [![Build Status](https://travis-ci.org/audiolion/array-shuffle.svg?branch=master)](https://travis-ci.org/audiolion/array-shuffle) [![codecov](https://codecov.io/gh/audiolion/array-shuffle/badge.svg?branch=master)](https://codecov.io/gh/audiolion/array-shuffle?branch=master)
+# array-shuffle [![Build Status](https://travis-ci.org/kimmelsg/array-shuffle.svg?branch=master)](https://travis-ci.org/kimmelsg/array-shuffle) [![codecov](https://codecov.io/gh/kimmelsg/array-shuffle/badge.svg?branch=master)](https://codecov.io/gh/kimmelsg/array-shuffle?branch=master)
 
 > [Fisher-Yates](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) shuffle of an array of items producing an unbiased permutation.
 
