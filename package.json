@@ -1,6 +1,6 @@
 {
   "name": "@kimmel/array-shuffle",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fisher-Yates shuffle of an array of items.",
   "license": "MIT",
   "repository": "kimmelsg/array-shuffle",
