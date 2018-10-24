@@ -11,11 +11,13 @@ $ npm install @kimmel/array-shuffle
 ## Usage
 
 ```js
-import shuffle from "array-shuffle";
+import shuffle from 'array-shuffle';
 
-shuffle([1, 2, 3, 4, 5, 6]);
+const shuffledArray = shuffle([1, 2, 3, 4, 5, 6]);
 //=> [3, 1, 2, 5, 6, 4]
 ```
+
+`shuffle` does _not_ mutate the original array.
 
 ## API
 
