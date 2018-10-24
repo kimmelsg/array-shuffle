@@ -13,7 +13,8 @@
     "node": ">=6"
   },
   "scripts": {
-    "test": "xo && nyc ava"
+    "test": "xo && nyc ava",
+    "build": "parcel build index.js"
   },
   "files": [
     "index.js"
@@ -34,6 +35,7 @@
     "ava": "^0.25.0",
     "codecov": "^3.0.0",
     "nyc": "^12.0.0",
+    "parcel-bundler": "^1.10.3",
     "xo": "^0.21.0"
   },
   "nyc": {
