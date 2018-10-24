@@ -11,7 +11,7 @@ $ npm install @kimmel/array-shuffle
 ## Usage
 
 ```js
-import shuffle from 'array-shuffle';
+import shuffle from '@kimmel/array-shuffle';
 
 const shuffledArray = shuffle([1, 2, 3, 4, 5, 6]);
 //=> [3, 1, 2, 5, 6, 4]
@@ -27,7 +27,7 @@ const shuffledArray = shuffle([1, 2, 3, 4, 5, 6]);
 
 Type: `array`
 
-['hello', 2, 5, { foo: 'bar' }]
+`['hello', 2, 5, { foo: 'bar' }]`
 
 ## License
 

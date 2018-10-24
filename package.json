@@ -26,6 +26,9 @@
     "trailingComma": "all",
     "printWidth": 100
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {},
   "devDependencies": {
     "ava": "^0.25.0",
