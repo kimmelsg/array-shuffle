@@ -14,8 +14,7 @@
   },
   "scripts": {
     "start": "tsc -w",
-    "build": "tsc",
-    "test": "jest --coverage"
+    "build": "tsc"
   },
   "files": [
     "index.js"
