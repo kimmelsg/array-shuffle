@@ -1,4 +1,24 @@
-parcelRequire=function(e,r,n,t){var i="function"==typeof parcelRequire&&parcelRequire,o="function"==typeof require&&require;function u(n,t){if(!r[n]){if(!e[n]){var f="function"==typeof parcelRequire&&parcelRequire;if(!t&&f)return f(n,!0);if(i)return i(n,!0);if(o&&"string"==typeof n)return o(n);var c=new Error("Cannot find module '"+n+"'");throw c.code="MODULE_NOT_FOUND",c}p.resolve=function(r){return e[n][1][r]||r},p.cache={};var l=r[n]=new u.Module(n);e[n][0].call(l.exports,p,l,l.exports,this)}return r[n].exports;function p(e){return u(p.resolve(e))}}u.isParcelRequire=!0,u.Module=function(e){this.id=e,this.bundle=u,this.exports={}},u.modules=e,u.cache=r,u.parent=i,u.register=function(r,n){e[r]=[function(e,r){r.exports=n},{}]};for(var f=0;f<n.length;f++)u(n[f]);if(n.length){var c=u(n[n.length-1]);"object"==typeof exports&&"undefined"!=typeof module?module.exports=c:"function"==typeof define&&define.amd?define(function(){return c}):t&&(this[t]=c)}return u}({"Focm":[function(require,module,exports) {
-"use strict";function r(r){return n(r)||o(r)||t()}function t(){throw new TypeError("Invalid attempt to spread non-iterable instance")}function o(r){if(Symbol.iterator in Object(r)||"[object Arguments]"===Object.prototype.toString.call(r))return Array.from(r)}function n(r){if(Array.isArray(r)){for(var t=0,o=new Array(r.length);t<r.length;t++)o[t]=r[t];return o}}function e(r){return(e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(r){return typeof r}:function(r){return r&&"function"==typeof Symbol&&r.constructor===Symbol&&r!==Symbol.prototype?"symbol":typeof r})(r)}module.exports=function(t){if(!Array.isArray(t))throw new TypeError("Expected Array, got ".concat(e(t)));for(var o=r(t),n=0;n<o.length-2;n++){var y=Math.floor(Math.random()*n),i=[o[y],o[n]];o[n]=i[0],o[y]=i[1]}return o};
-},{}]},{},["Focm"], null)
-//# sourceMappingURL=/index.map
+/**
+ * Fisher-Yates shuffles an array of items in O(n) time.
+ * The algorithm effectively puts all elements into a hat and continually
+ * draws random elements from the hat until no elements remain.
+ * @param {array} items - An array of items.
+ * @returns {array} shuffledItems - A new array of shuffled items.
+ */
+export default function shuffle(items) {
+    var _a;
+    if (!Array.isArray(items)) {
+        throw new TypeError("Expected Array, got " + typeof items);
+    }
+    var shuffledItems = items.slice();
+    for (var index = 0; index < shuffledItems.length - 2; index++) {
+        var randomIndex = Math.floor(Math.random() * index);
+        // Swap indices with es6 destructuring e.g. [a, b] = [b, a]
+        _a = [
+            shuffledItems[randomIndex],
+            shuffledItems[index],
+        ], shuffledItems[index] = _a[0], shuffledItems[randomIndex] = _a[1];
+    }
+    return shuffledItems;
+}
+//# sourceMappingURL=index.js.map

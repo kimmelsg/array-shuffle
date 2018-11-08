@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * Fisher-Yates shuffles an array of items in O(n) time.
  * The algorithm effectively puts all elements into a hat and continually
@@ -8,7 +6,7 @@
  * @returns {array} shuffledItems - A new array of shuffled items.
  */
 
-module.exports = items => {
+export default function shuffle(items: Array<any>) {
   if (!Array.isArray(items)) {
     throw new TypeError(`Expected Array, got ${typeof items}`);
   }
@@ -22,4 +20,4 @@ module.exports = items => {
     ];
   }
   return shuffledItems;
-};
+}

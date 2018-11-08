@@ -1,11 +1,10 @@
-import test from 'ava';
-import shuffle from '.';
+import shuffle from './index';
 
-test('Shuffle', t => {
-  const err = t.throws(() => {
-    shuffle(123);
-  }, TypeError);
-  t.is(err.message, 'Expected Array, got number');
+test('Shuffle', () => {
+  shuffle(123).catch(e => {
+    expect(e).toBe(TypeError);
+    expect(e.message).toEqual('Expected Array, got number');
+  });
 
-  t.notDeepEqual(shuffle([1, 2, 3, 4, 5, 6]), [1, 2, 3, 4, 5, 6]);
+  expect(shuffle([1, 2, 3, 4, 5, 6])).not.toEqual([1, 2, 3, 4, 5, 6]);
 });
